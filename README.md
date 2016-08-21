@@ -13,6 +13,6 @@ npm install --save sidevue
 ## Usage
 
 ```
-require('sidevue');
+Vue.component('sidevue', require('sidevue'));
 ```
 

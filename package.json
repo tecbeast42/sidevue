@@ -1,10 +1,10 @@
 {
   "name": "sidevue",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "A VueJs powered Sidebar",
-  "main": "dist/sidevue.vue",
+  "main": "dist/js/sidevue.js",
   "scripts": {
-    "compile": "mkdir dist && cp src/vue/sidevue.vue dist/",
+    "compile": "babel --presets=es2015 -d dist/ src/",
     "prepublish": "npm run compile"
   },
   "repository": {
