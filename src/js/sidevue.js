@@ -1,6 +1,6 @@
 module.exports = {
     template: `
-        <section class="SideVue" @click="toggle()" :style="style">
+        <section class="SideVue" :style="style">
             <slot></slot>
         </section>
     `,

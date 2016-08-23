@@ -5,7 +5,18 @@
     <title>SideVue Test</title>
 </head>
 <body>
-    <sidevue open-gap="90%" direction="right">
+    <sidevue open-gap="90%" direction="right" style="background-color:red">
+        <ul>
+            <li>Entry</li>
+            <li>Entry</li>
+            <li>Entry</li>
+            <li>Entry</li>
+            <li>Entry</li>
+        </ul>
+    	<test-button> Toggle Me </test-button>
+    </sidevue>
+
+    <sidevue open-gap="90%" direction="left" style="background-color:blue">
         <ul>
             <li>Entry</li>
             <li>Entry</li>
@@ -15,7 +26,7 @@
         </ul>
     </sidevue>
 
-    <sidevue open-gap="90%" direction="left">
+    <sidevue open-gap="90%" direction="top" style="background-color:green">
         <ul>
             <li>Entry</li>
             <li>Entry</li>
@@ -25,7 +36,7 @@
         </ul>
     </sidevue>
 
-    <sidevue open-gap="90%" direction="top">
+    <sidevue open-gap="90%" direction="bottom" style="background-color:yellow">
         <ul>
             <li>Entry</li>
             <li>Entry</li>
@@ -35,17 +46,6 @@
         </ul>
     </sidevue>
 
-    <sidevue open-gap="90%" direction="bottom">
-        <ul>
-            <li>Entry</li>
-            <li>Entry</li>
-            <li>Entry</li>
-            <li>Entry</li>
-            <li>Entry</li>
-        </ul>
-    </sidevue>
-
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.26/vue.js"></script>
     <script type="text/javascript" src="assets/js/main.js"></script>
 </body>
 </html>

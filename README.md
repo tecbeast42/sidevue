@@ -16,3 +16,9 @@ npm install --save sidevue
 Vue.component('sidevue', require('sidevue'));
 ```
 
+You can control your sidebars with the vue event system.
+```
+    'sidevue-open'
+    'sidevue-close'
+    'sidevue-toggle'
+```
