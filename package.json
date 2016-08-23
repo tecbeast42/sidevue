@@ -1,6 +1,6 @@
 {
   "name": "sidevue",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "description": "A VueJs powered Sidebar",
   "main": "dist/js/sidevue.js",
   "scripts": {
