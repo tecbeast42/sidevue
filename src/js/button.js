@@ -1,7 +1,7 @@
 module.exports = {
     template:`
 	<button @click="toggle()">
-	    Toggle
+	    Toggle {{sidevueId}}
 	</button>
 
     `,

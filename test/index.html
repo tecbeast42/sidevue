@@ -3,48 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <title>SideVue Test</title>
+    <style type="text/css">
+        .button-wrapper {
+            position: absolute;
+            top: 200px;
+        }
+    </style>
 </head>
-<body>
+<body style="overflow: hidden">
     <sidevue sidevue-id="1" open-gap="90%" direction="right" style="background-color:red">
-        <ul>
-            <li>Entry</li>
-            <li>Entry</li>
-            <li>Entry</li>
-            <li>Entry</li>
-            <li>Entry</li>
-        </ul>
-    	<test-button sidevue-id="1"> Toggle Me </test-button>
     </sidevue>
 
     <sidevue sidevue-id="2" open-gap="90%" direction="left" style="background-color:blue">
-        <ul>
-            <li>Entry</li>
-            <li>Entry</li>
-            <li>Entry</li>
-            <li>Entry</li>
-            <li>Entry</li>
-        </ul>
     </sidevue>
 
-    <sidevue open-gap="90%" direction="top" style="background-color:green">
-        <ul>
-            <li>Entry</li>
-            <li>Entry</li>
-            <li>Entry</li>
-            <li>Entry</li>
-            <li>Entry</li>
-        </ul>
+    <sidevue sidevue-id="3" open-gap="90%" direction="top" style="background-color:green">
     </sidevue>
 
-    <sidevue open-gap="90%" direction="bottom" style="background-color:yellow">
-        <ul>
-            <li>Entry</li>
-            <li>Entry</li>
-            <li>Entry</li>
-            <li>Entry</li>
-            <li>Entry</li>
-        </ul>
+    <sidevue sidevue-id="4" open-gap="90%" direction="bottom" style="background-color:yellow">
     </sidevue>
+
+    <div class="button-wrapper">
+        <test-button sidevue-id="1"> Toggle Me </test-button>
+        <test-button sidevue-id="2"> Toggle Me </test-button>
+        <test-button sidevue-id="3"> Toggle Me </test-button>
+        <test-button sidevue-id="4"> Toggle Me </test-button>
+    </div>
+
 
     <script type="text/javascript" src="assets/js/main.js"></script>
 </body>
