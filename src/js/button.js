@@ -1,15 +1,22 @@
 module.exports = {
     template:`
 	<button @click="toggle()">
-	    Toggle
+	    Toggle {{sidevueId}}
 	</button>
-	
+
     `,
     methods: {
         toggle() {
-	    this.$dispatch('sidevue-toggle');
-	}
+	       this.$root.$emit('sidevue-toggle' + this.sidevueId);
+	   }
+    },
+    props: {
+        sidevueId: {
+            default: '',
+            type: String,
+            required: false
+        }
     }
-    
+
 
 }
