@@ -63,17 +63,6 @@ module.exports = {
                 console.warn("SideVue: Invalid direction");
         }
     },
-    events: {
-        'sidevue-open'() {
-            this.open = true;
-        },
-        'sidevue-close'() {
-            this.open = false;
-        },
-        'sidevue-toggle'() {
-            this.toggle();
-        }
-    },
     methods: {
         toggle() {
             this.open = !this.open;
@@ -99,6 +88,22 @@ module.exports = {
             default: false,
             type: Boolean,
             required: false,
+        },
+        sidevueId: {
+            default: '',
+            type: String,
+            required: false,
         }
+    },
+    ready() {
+        this.$root.$on('sidevue-close' + this.sidevueId, () => {
+            this.open = false;
+        });
+        this.$root.$on('sidevue-open' + this.sidevueId, () => {
+            this.open = true;
+        });
+        this.$root.$on('sidevue-toggle' + this.sidevueId, () => {
+            this.toggle();
+        });
     }
 };
