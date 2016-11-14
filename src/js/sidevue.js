@@ -1,9 +1,16 @@
 module.exports = {
     template: `
-        <section class="SideVue" :style="style">
-            <slot></slot>
-        </section>
+        <div>
+            <section class="SideVue" :style="style">
+                <slot></slot>
+            </section>
+        </div>
     `,
+    data() {
+        return {
+            open: false
+        }
+    },
     computed : {
         style() {
             let style = Object.assign({
@@ -84,7 +91,7 @@ module.exports = {
             type: String,
             required: false,
         },
-        open: {
+        startOpen: {
             default: false,
             type: Boolean,
             required: false,
@@ -95,7 +102,9 @@ module.exports = {
             required: false,
         }
     },
-    ready() {
+    mounted() {
+        this.open = this.startOpen;
+
         this.$root.$on('sidevue-close' + this.sidevueId, () => {
             this.open = false;
         });
