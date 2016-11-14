@@ -40,7 +40,7 @@ E.g.:
 The `sideVueBus` lets you talk with your sidebars
 
 ```
-import { sideVueBar } from 'sidevue';
+import { sideVueBus } from 'sidevue';
 
 sideVueBus.$on('sidevue-close' + sidevueId, function);
 sideVueBus.$on('sidevue-open' + sidevueId, function);
@@ -50,7 +50,7 @@ sideVueBus.$on('sidevue-toggle' + sidevueId, function);
 > If you have only one sidebar you can omit the id -> this works too
 
 ```
-import { sideVueBar } from 'sidevue';
+import { sideVueBus } from 'sidevue';
 
 sideVueBus.$on('sidevue-toggle', function);
 ```
