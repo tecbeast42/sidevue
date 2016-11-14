@@ -35,7 +35,7 @@ E.g.:
 <sidevue close-gap="50px" open-gap="50%" direction="right">
 ```
 
-### Talk with your component
+### Talk with your sidebar(s)
 
 The `sideVueBus` lets you talk with your sidebars
 
