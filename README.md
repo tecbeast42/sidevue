@@ -14,13 +14,43 @@ npm install --save sidevue
 
 ## Usage
 
+### Initialize SideVue
+
+> You can have as many Sidebars as you want. We support from top, bottom, left, right moving sidebars.
+
 ```
-Vue.component('sidevue', require('sidevue'));
+import sidevue from 'sidevue';
+
+Vue.component('sidevue', sidevue);
 ```
 
-You can control your sidebars with the vue event system.
+### Use the Component
+
+E.g.:
+
 ```
-    'sidevue-open'
-    'sidevue-close'
-    'sidevue-toggle'
+<sidevue close-gap="50px" open-gap="50%" direction="top">
+<sidevue close-gap="-50px" open-gap="400rem" direction="bottom">
+<sidevue close-gap="50px" open-gap="50%" direction="left">
+<sidevue close-gap="50px" open-gap="50%" direction="right">
+```
+
+### Talk with your component
+
+The `sideVueBus` lets you talk with your sidebars
+
+```
+import { sideVueBar } from 'sidevue';
+
+sideVueBus.$on('sidevue-close' + sidevueId, function);
+sideVueBus.$on('sidevue-open' + sidevueId, function);
+sideVueBus.$on('sidevue-toggle' + sidevueId, function);
+```
+
+> If you have only one sidebar you can omit the id -> this works too
+
+```
+import { sideVueBar } from 'sidevue';
+
+sideVueBus.$on('sidevue-toggle', function);
 ```

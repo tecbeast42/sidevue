@@ -1,4 +1,6 @@
-import sideVueBus from './sideVueBus';
+import Vue from 'vue';
+
+export const sideVueBus = new Vue();
 
 export default {
     template: `
