@@ -1,4 +1,6 @@
-module.exports = {
+import sideVueBus from './sideVueBus';
+
+export default {
     template: `
         <div>
             <section class="SideVue" :style="style">
@@ -105,14 +107,14 @@ module.exports = {
     mounted() {
         this.open = this.startOpen;
 
-        this.$root.$on('sidevue-close' + this.sidevueId, () => {
+        sideVueBus.$on('sidevue-close' + this.sidevueId, () => {
             this.open = false;
         });
-        this.$root.$on('sidevue-open' + this.sidevueId, () => {
+        sideVueBus.$on('sidevue-open' + this.sidevueId, () => {
             this.open = true;
         });
-        this.$root.$on('sidevue-toggle' + this.sidevueId, () => {
+        sideVueBus.$on('sidevue-toggle' + this.sidevueId, () => {
             this.toggle();
         });
     }
-};
+}

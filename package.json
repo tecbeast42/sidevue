@@ -1,8 +1,8 @@
 {
   "name": "sidevue",
   "version": "2.0.0",
-  "description": "A VueJs powered Sidebar",
-  "main": "dist/js/sidevue.js",
+  "description": "A VueJs powered Sidebar -> A SideVue",
+  "main": "dist/js/sideVue.js",
   "scripts": {
     "compile": "babel --presets=es2015 -d dist/ src/",
     "prepublish": "npm run compile"

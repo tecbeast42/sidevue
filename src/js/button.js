@@ -1,13 +1,14 @@
-module.exports = {
+import sideVueBus from './sideVueBus';
+
+export default {
     template:`
 	<button @click="toggle()">
 	    Toggle {{sidevueId}}
 	</button>
-
     `,
     methods: {
         toggle() {
-	       this.$root.$emit('sidevue-toggle' + this.sidevueId);
+	       sideVueBus.$emit('sidevue-toggle' + this.sidevueId);
 	   }
     },
     props: {
@@ -17,6 +18,4 @@ module.exports = {
             required: false
         }
     }
-
-
 }
