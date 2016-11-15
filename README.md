@@ -29,10 +29,10 @@ Vue.component('sidevue', sidevue);
 E.g.:
 
 ```
-<sidevue close-gap="50px" open-gap="50%" direction="top">
-<sidevue close-gap="-50px" open-gap="400rem" direction="bottom">
-<sidevue close-gap="50px" open-gap="50%" direction="left">
-<sidevue close-gap="50px" open-gap="50%" direction="right">
+<sidevue close-gap="50px" open-gap="50%" direction="top" sidevue-class="yourCustomClass">
+<sidevue close-gap="-50px" open-gap="400rem" direction="bottom" sidevue-class="yourCustomClass">
+<sidevue close-gap="50px" open-gap="50%" direction="left" sidevue-class="yourCustomClass">
+<sidevue close-gap="50px" open-gap="50%" direction="right" sidevue-class="yourCustomClass">
 ```
 
 ### Talk with your sidebar(s)
