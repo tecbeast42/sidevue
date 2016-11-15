@@ -5,7 +5,7 @@ export const sideVueBus = new Vue();
 export default {
     template: `
         <div>
-            <section class="SideVue" :style="style">
+            <section class="SideVue" :style="style" :class="sidevueClass">
                 <slot></slot>
             </section>
         </div>
@@ -104,6 +104,11 @@ export default {
             default: '',
             type: String,
             required: false,
+        },
+        sidevueClass: {
+            default: '',
+            type: String,
+            required: false
         }
     },
     mounted() {

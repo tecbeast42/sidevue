@@ -6,22 +6,40 @@
     <style type="text/css">
         .button-wrapper {
             position: absolute;
-            top: 200px;
+            top: 50%;
+            left: 40%;
+            background-color: black;
+        }
+
+        .red {
+            background-color: red;
+        }
+
+        .blue {
+            background-color: blue;
+        }
+
+        .green {
+            background-color: green;
+        }
+
+        .yellow {
+            background-color: yellow;
         }
     </style>
 </head>
 <body style="overflow: hidden">
     <div id="app">
-        <sidevue sidevue-id="1" open-gap="90%" direction="right" style="background-color:red">
+        <sidevue sidevue-id="1" open-gap="90%" direction="right" sidevue-class="red">
         </sidevue>
 
-        <sidevue sidevue-id="2" open-gap="90%" direction="left" style="background-color:blue">
+        <sidevue sidevue-id="2" open-gap="90%" direction="left" sidevue-class="blue">
         </sidevue>
 
-        <sidevue sidevue-id="3" open-gap="90%" direction="top" style="background-color:green">
+        <sidevue sidevue-id="3" open-gap="90%" direction="top" sidevue-class="green">
         </sidevue>
 
-        <sidevue sidevue-id="4" open-gap="90%" direction="bottom" style="background-color:yellow">
+        <sidevue sidevue-id="4" open-gap="90%" direction="bottom" sidevue-class="yellow">
         </sidevue>
 
         <div class="button-wrapper">

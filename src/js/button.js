@@ -1,4 +1,4 @@
-import sideVueBus from './sideVueBus';
+import { sideVueBus } from './sideVue.js';
 
 export default {
     template:`
