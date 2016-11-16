@@ -2,7 +2,7 @@
 
 A VueJs powered Sidebar to drop into your projects with ease.
 
-> It requireds a bundler like Webpack or Browserify
+> SideVue requires a bundler like Webpack or Browserify
 
 > Sidevue now uses vue 2. If you need the sidebar for vue 1 use Sidevue version ^1.0.0
 
@@ -30,6 +30,9 @@ E.g.:
 
 ```
 <sidevue close-gap="50px" open-gap="50%" direction="top" sidevue-class="yourCustomClass">
+    /* Sidebar Content */
+</sidevue>
+
 <sidevue close-gap="-50px" open-gap="400rem" direction="bottom" sidevue-class="yourCustomClass">
 <sidevue close-gap="50px" open-gap="50%" direction="left" sidevue-class="yourCustomClass">
 <sidevue close-gap="50px" open-gap="50%" direction="right" sidevue-class="yourCustomClass">
