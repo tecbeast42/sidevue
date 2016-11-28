@@ -45,6 +45,10 @@ The `sideVueBus` lets you talk with your sidebars
 ```
 import { sideVueBus } from 'sidevue';
 
+sideVueBus.$emit('sidevue-close' + sidevueId, function);
+sideVueBus.$emit('sidevue-open' + sidevueId, function);
+sideVueBus.$emit('sidevue-toggle' + sidevueId, function);
+
 sideVueBus.$on('sidevue-close' + sidevueId, function);
 sideVueBus.$on('sidevue-open' + sidevueId, function);
 sideVueBus.$on('sidevue-toggle' + sidevueId, function);
