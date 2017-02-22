@@ -1,3 +1,8 @@
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![npm](https://img.shields.io/npm/v/sidevue.svg)](https://www.npmjs.com/package/sidevue)
+[![npm](https://img.shields.io/npm/dt/sidevue.svg)](https://www.npmjs.com/package/sidevue)
+
+
 # SideVue
 
 A VueJs powered Sidebar to drop into your projects with ease.
